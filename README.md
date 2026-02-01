@@ -18,8 +18,7 @@ These scripts are intentionally lightweight and dependency‑free, making them e
 ## Project Structure
 
 ```
-.
-├── incoming/          # Source directory for CSV processing
+
 ├── messy_file/        # Unorganized input files
 ├── organized/         # Auto-generated organized output
 │   ├── CSV/
@@ -117,8 +116,7 @@ This mirrors **real automation tasks** such as:
 
 1. Ensure Python 3.x is installed
 2. Create the required input folders:
-
-   * `incoming/` (with `.csv` files)
+   
    * `messy_file/` (with mixed file types)
 3. Run each script:
 
@@ -132,15 +130,12 @@ python file_organizer.py
 ## Notes for Recruiters
 
 * This project intentionally avoids external libraries to highlight **core Python competency**.
-* The scripts are modular and easily extensible (e.g., logging, dry‑run mode, CLI arguments).
 * Demonstrates readiness for junior data engineering, backend, automation, or scripting roles.
 
 ---
 
-## Improvements will focus on :
+## Future improvements will focus on :
 
 * Add logging instead of `print`
-* Support recursive directory traversal
-* Add CLI arguments with `argparse`
-* Implement unit tests
-* Add rollback / dry‑run mode
+* use shutil.move instead of os.rename
+  
